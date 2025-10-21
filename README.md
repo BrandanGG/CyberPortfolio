@@ -85,7 +85,3 @@ To customize the portfolio:
 - Monitor for security vulnerabilities
 - Implement proper logging and monitoring
 - Use environment variables for sensitive configuration
-
-## License
-
-This project is open source and available under the MIT License.
