@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;/&gt;</span>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#career" class="nav-link">Career</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#projects" class="nav-link">Work Projects</a></li>
+                <li><a href="#homelab" class="nav-link">Homelab</a></li>
+                <li><a href="#tech-stack" class="nav-link">Web Infrastructure</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">IT Operations & Cybersecurity Engineer</h1>
+            <p class="hero-subtitle">Securing Systems and People</p>
+            <p class="hero-subtitle">Brandan Grossi</p>
+            <div class="hero-cta">
+                <a href="#about" class="btn-primary">Explore Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Cybersecurity professional specializing in vulnerability management, endpoint security, 
+                        and secure development practices. I focus on building resilient systems through 
+                        comprehensive security architecture, incident response, and proactive threat mitigation. 
+                        My expertise spans from secure coding and API development to network segmentation 
+                        and cloud security implementations.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Security Operations</h3>
+                            <ul>
+                                <li>Vulnerability Management</li>
+                                <li>Endpoint Security</li>
+                                <li>Security Architecture</li>
+                                <li>Incident Response</li>
+                                <li>Data Protection</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Development & Code</h3>
+                            <ul>
+                                <li>Secure Coding Practices</li>
+                                <li>Python & PowerShell</li>
+                                <li>Secure Web Applications</li>
+                                <li>Secure Code Review</li>
+                                <li>API Security</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Infrastructure & Network</h3>
+                            <ul>
+                                <li>Cloud Security</li>
+                                <li>Network Segmentation</li>
+                                <li>Firewall Configuration</li>
+                                <li>Virtualized Security</li>
+                                <li>Network Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Timeline Section -->
+    <section id="career" class="section">
+        <div class="container">
+            <h2 class="section-title">Career Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Helpdesk Technician -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Helpdesk Technician</h3>
+                            <span class="timeline-company">Care Central VNA & Hospice Inc.</span>
+                            <span class="timeline-duration">Nov 2021 - Nov 2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Entry-level IT support role providing helpdesk services and learning foundational IT skills.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT Manager -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>IT Manager / Systems Administrator</h3>
+                            <span class="timeline-company">Care Central VNA & Hospice Inc.</span>
+                            <span class="timeline-duration">Nov 2022 - Aug 2023</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Managed IT operations across multiple locations with focus on infrastructure and security.</p>
+                            <ul class="timeline-achievements">
+                                <li>Managed critical infrastructure outages and maintained SLAs</li>
+                                <li>Built department budget based on expenditure analysis and future deployments</li>
+                                <li>Provided comprehensive IT support across 4 offices remotely and in-person</li>
+                                <li>Triaged and managed threat alerts through Sophos EDR, MS Defender, and KnowBe4 PhishER</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Desk Engineer (Combined P1-P3) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Service Desk Engineer (P1 - P3)</h3>
+                            <span class="timeline-company">Commonwealth Fusion Systems</span>
+                            <span class="timeline-duration">Aug 2023 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Progressive service desk role with increasing responsibilities, automation focus, and project leadership.</p>
+                            <ul class="timeline-achievements">
+                                <li>Closed over 4,500 tickets ranging from all levels of service desk tiers</li>
+                                <li>Introduced and expanded automations for FreshService, Okta workflows, and GitHub Actions</li>
+                                <li>Acted as escalation point for team members and actively mentored junior members</li>
+                                <li>Led long-term projects including software deployments, custom automations, and Okta integrations</li>
+                                <li>Deployed custom asset decommissioning tool for better inventory management</li>
+                                <li>Rebuilt Intune update rings for improved Windows patching</li>
+                                <li>Deployed Winget-AutoUpdate, patching 8,000+ vulnerabilities across endpoints</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Role - Cybersecurity Liaison -->
+                <div class="timeline-item current">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cybersecurity Liaison</h3>
+                            <span class="timeline-company">Commonwealth Fusion Systems</span>
+                            <span class="timeline-duration">Jan 2024 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Leading cybersecurity operations with focus on threat detection, vulnerability management, and security automation.</p>
+                            <ul class="timeline-achievements">
+                                <li>Closed over 2,000 cybersecurity tickets across EDR findings, email security, and ASM alerts</li>
+                                <li>Removed over 30,000 vulnerabilities via automation in a single month</li>
+                                <li>Introduced automation to PhishER platform using KnowBe4 Rules and Actions</li>
+                                <li>Investigated and remediated hundreds of high/critical cloud IOMs with Rapid7 and CrowdStrike</li>
+                                <li>Developed custom Python script for vulnerability management platform deduplication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Education Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">Certificates & Education</h2>
+            <div class="certificates-grid">
+                <!-- Education -->
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>Bachelor's in Cybersecurity & Information Assurance</h3>
+                        <span class="cert-issuer">In Progress</span>
+                    </div>
+                    <p class="cert-description">
+                        Comprehensive program covering information security, network defense, 
+                        digital forensics, and secure software development. 2 classes remaining.
+                    </p>
+                    <div class="cert-date">2023 - 2025</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>Associate's Degree in Computer Information Systems</h3>
+                        <span class="cert-issuer">Completed</span>
+                    </div>
+                    <p class="cert-description">
+                        Foundation in computer systems, networking, and information technology 
+                        fundamentals that form the basis for cybersecurity expertise.
+                    </p>
+                    <div class="cert-date">2020 - 2022</div>
+                </div>
+                
+                <!-- 2025 Certifications -->
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>SSCP (Systems Security Certified Practitioner)</h3>
+                        <span class="cert-issuer">(ISC)²</span>
+                    </div>
+                    <p class="cert-description">
+                        Intermediate-level security certification covering access controls, 
+                        cryptography, network security, and incident response.
+                    </p>
+                    <div class="cert-date">2025</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CySA+ (Cybersecurity Analyst+)</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Advanced cybersecurity certification focusing on threat detection, 
+                        vulnerability management, and security analytics.
+                    </p>
+                    <div class="cert-date">2025</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA Security Analytics Professional (CSAP)</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Specialized certification in security analytics, threat intelligence, 
+                        and advanced security monitoring techniques.
+                    </p>
+                    <div class="cert-date">2025</div>
+                </div>
+                
+                <!-- 2024 Certifications -->
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA Project+</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Project management certification covering project lifecycle, 
+                        risk management, and stakeholder communication.
+                    </p>
+                    <div class="cert-date">2024</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA Security+</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Foundational cybersecurity certification covering threat management, 
+                        cryptography, identity management, and risk assessment.
+                    </p>
+                    <div class="cert-date">2024</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA Secure Infrastructure Specialist (CSIS)</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Specialized certification combining Security+, Network+, and Server+ 
+                        knowledge for secure infrastructure management.
+                    </p>
+                    <div class="cert-date">2024</div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA Network+</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Network infrastructure certification covering network design, 
+                        implementation, troubleshooting, and security.
+                    </p>
+                    <div class="cert-date">2024</div>
+                </div>
+                
+                <!-- 2023 Certifications -->
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>CompTIA A+</h3>
+                        <span class="cert-issuer">CompTIA</span>
+                    </div>
+                    <p class="cert-description">
+                        Entry-level IT certification covering hardware, software, 
+                        troubleshooting, and basic security concepts.
+                    </p>
+                    <div class="cert-date">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Projects</h2>
+            <div class="projects-content">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Endpoint & Server Vulnerability Management</h3>
+                        <span class="project-category">Security Operations</span>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Comprehensive vulnerability management program focusing on automated patching 
+                            and endpoint security improvements across the organization.
+                        </p>
+                        <ul class="project-achievements">
+                            <li>Introduced Update rings in Intune for OS patch availability</li>
+                            <li>Revamped RMM processes to install patches on endpoints</li>
+                            <li>Worked with stakeholders to implement automated server patch schedules</li>
+                            <li>Deployed Winget update tool to all Windows endpoints</li>
+                            <li>Developed custom Python script with GitHub Actions for CrowdStrike device auditing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Rapid7 Cloud Misconfiguration Analysis</h3>
+                        <span class="project-category">Cloud Security</span>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Implemented automated cloud security monitoring and remediation processes 
+                            to reduce cloud infrastructure risks and improve security posture.
+                        </p>
+                        <ul class="project-achievements">
+                            <li>Built and deployed Rapid7 bots for automated cloud security monitoring</li>
+                            <li>Configured alerts for new accounts/projects and specific port openings</li>
+                            <li>Analyzed and remediated findings with cross-functional teams</li>
+                            <li>Reduced public visibility of S3 buckets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>CIS Benchmark Implementation</h3>
+                        <span class="project-category">Security Controls</span>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Implemented CIS benchmark controls for critical applications to enhance 
+                            security posture while maintaining operational efficiency.
+                        </p>
+                        <ul class="project-achievements">
+                            <li>Implemented CIS benchmark controls for Chrome browser</li>
+                            <li>Collaborated with teams for slow rollout testing</li>
+                            <li>Ensured minimal service disruption during security control implementation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>IT Ops Development Environment</h3>
+                        <span class="project-category">DevOps & Security</span>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Modernizing IT operations by transitioning from local development to 
+                            centralized development environments with enhanced security controls.
+                        </p>
+                        <ul class="project-achievements">
+                            <li>Transitioning IT Ops processes to centralized development environment</li>
+                            <li>Improving API key management and reducing security risks</li>
+                            <li>Eliminating potential access method vulnerabilities (leaked API keys, .env files)</li>
+                            <li>Deployed new GAM project in Google Cloud</li>
+                            <li>Removing endpoint access to GAM with increased logging and SSH/SDM access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Homelab Section -->
+    <section id="homelab" class="section">
+        <div class="container">
+            <h2 class="section-title">Homelab Infrastructure</h2>
+            <div class="homelab-content">
+                <div class="homelab-description">
+                    <p>
+                        My homelab demonstrates enterprise-grade security architecture with network segmentation, 
+                        virtualization, and comprehensive monitoring. Built around a UDM Pro gateway with VLAN-based 
+                        security zones, it showcases real-world security implementations and defensive strategies.
+                    </p>
+                </div>
+                
+                <div class="network-topology">
+                    <h3>Network Architecture</h3>
+                    <div class="topology-diagram">
+                        <!-- Main Gateway -->
+                        <div class="network-layer">
+                            <div class="device firewall">
+                                <span>UDM Pro</span>
+                                <small>Main Gateway & Firewall</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Core Infrastructure -->
+                        <div class="network-layer">
+                            <div class="device switch">
+                                <span>Core Switch</span>
+                                <small>VLAN Management</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Virtualized Infrastructure -->
+                        <div class="network-layer">
+                            <div class="device server">
+                                <span>Proxmox 1</span>
+                                <small>DNS & Authentik SSO</small>
+                            </div>
+                            <div class="device server">
+                                <span>Proxmox 2</span>
+                                <small>Dev Environment & Services</small>
+                            </div>
+                        </div>
+                        
+                        <!-- DMZ Infrastructure -->
+                        <div class="network-layer">
+                            <div class="device firewall">
+                                <span>pfSense VM</span>
+                                <small>DMZ Firewall</small>
+                            </div>
+                            <div class="device server">
+                                <span>Linux VM</span>
+                                <small>Docker Services</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Services & Applications -->
+                        <div class="network-layer">
+                            <div class="device server">
+                                <span>Wazuh SIEM</span>
+                                <small>Security Monitoring</small>
+                            </div>
+                            <div class="device server">
+                                <span>Windows DC</span>
+                                <small>Domain Controller</small>
+                            </div>
+                            <div class="device server">
+                                <span>Docker Stack</span>
+                                <small>Reverse Proxy & Services</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Network Segments -->
+                        <div class="network-layer">
+                            <div class="device client">
+                                <span>Guest Network</span>
+                                <small>Isolated Access</small>
+                            </div>
+                            <div class="device client">
+                                <span>IoT Network</span>
+                                <small>Device Management</small>
+                            </div>
+                            <div class="device client">
+                                <span>Management</span>
+                                <small>Admin Access</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="homelab-features">
+                    <h3>Infrastructure Components</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h4>Network Segmentation</h4>
+                            <p>VLAN-based security zones with UDM Pro gateway and pfSense DMZ</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Virtualization</h4>
+                            <p>Dual Proxmox hypervisors for high availability and resource management</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Container Orchestration</h4>
+                            <p>Docker containers with Portainer management and reverse proxy</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Security Monitoring</h4>
+                            <p>Wazuh SIEM for centralized logging and threat detection</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Identity Management</h4>
+                            <p>Authentik SSO for centralized authentication and authorization</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Cloud Integration</h4>
+                            <p>Cloudflare tunnels for secure external access to internal services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Infrastructure</h2>
+            <div class="tech-stack-content">
+                <div class="stack-description">
+                    <p>
+                        This project demonstrates enterprise-grade network architecture with multi-layer security, 
+                        network segmentation, and advanced traffic routing. Built to showcase real-world 
+                        infrastructure design principles and security implementations.
+                    </p>
+                </div>
+                
+                <div class="stack-layers">
+                    <div class="stack-layer">
+                        <h3>Frontend</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">HTML5</span>
+                                <span class="tech-desc">Semantic markup with security considerations</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">CSS3</span>
+                                <span class="tech-desc">Dark theme with security-focused design</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">JavaScript</span>
+                                <span class="tech-desc">Minimal JS for enhanced security</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stack-layer">
+                        <h3>Backend</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">Python Flask</span>
+                                <span class="tech-desc">Lightweight WSGI framework</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Security Headers</span>
+                                <span class="tech-desc">CSP, HSTS, X-Frame-Options</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Template Engine</span>
+                                <span class="tech-desc">Jinja2 with auto-escaping</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stack-layer">
+                        <h3>Infrastructure Architecture</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">UDM Pro</span>
+                                <span class="tech-desc">Main gateway with VLAN segmentation</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">pfSense DMZ</span>
+                                <span class="tech-desc">Isolated firewall on dedicated NIC</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Proxmox</span>
+                                <span class="tech-desc">Virtualization host with network isolation</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Linux VM</span>
+                                <span class="tech-desc">Docker host with MACVLAN networking</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Docker Containers</span>
+                                <span class="tech-desc">Cloudflared, NPM, Flask app</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="infrastructure-flow">
+                    <h3>Traffic Flow Architecture</h3>
+                    <div class="flow-description">
+                        <div class="mermaid">
+                            %%{init: {"theme": "dark", "themeVariables": { "background": "transparent", "clusterBkg": "transparent", "clusterBorder": "transparent", "primaryColor": "#00ff88", "secondaryColor": "#00d4ff", "tertiaryColor": "#ff6b35", "lineColor": "#00ff88", "textColor": "#ffffff", "labelBackground": "transparent", "edgeLabelBackground": "transparent" }, "flowchart": {"diagramPadding": 32, "useMaxWidth": false, "htmlLabels": false}}}%%
+                            graph TD
+                            %% Theme-aligned styles (match site dark theme)
+                            classDef Cloud fill:#1a1a1a,stroke:#00d4ff,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
+                            classDef Host fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
+                            classDef App fill:#1a1a1a,stroke:#ff6b35,color:#ffffff,stroke-width:2px,rx:50%;
+                            classDef Proxy fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
+                            classDef Firewall fill:#1a1a1a,stroke:#ff4757,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
+                            classDef Egress fill:#1a1a1a,stroke:#444444,color:#b0b0b0,stroke-width:2px,rx:8px,ry:8px;
+                            classDef User fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:50%;
+                        
+                            %% -------------------- INBOUND APPLICATION FLOW --------------------
+                            A["User Initiated Traffic"]:::User
+                            B["Cloudflare CNAMEs / DNS"]:::Cloud
+                            C["Cloudflare Tunnel Service"]:::Cloud
+                            D{"Linux Host (Local Network)"}:::Host
+                            E["Mac VLAN Routing"]:::Host
+                            F("Cloudflared Container"):::Cloud
+                            G["Reverse Proxy"]:::Proxy
+                            H(("Flask App Docker Container")):::App
+                        
+                            A -- "HTTPS Request" --> B
+                            B -- "Routed to CF Edge" --> C
+                            C -- "Established Tunnel" --> D
+                            D -- "Route Traffic" --> E
+                            E -- "Routing" --> F
+                            F -- "Proxy Request" --> G
+                            G -- "Proxy" --> H
+                        
+                            %% -------------------- OUTBOUND EGRESS / INTERNET FLOW --------------------
+                            subgraph "Egress Path"
+                                direction LR
+                                J["PFSense Firewall"]:::Firewall
+                                K["Isolated NIC"]:::Egress
+                                L["UDM Pro DMZ Vlan"]:::Egress
+                                M("Internet"):::User
+                        
+                                D -- "Route Egress Traffic" --> J
+                                J -- "Secure Forwarding" --> K
+                                K -- "Physical Connection" --> L
+                                L -- "WAN Uplink" --> M
+                            end
+                        
+                            %% -------------------- App Stack to Egress Path --------------------
+                            H -- "External Resource Fetch" --> D
+                        
+                            %% Link styling for egress routes (dashed, blue)
+                            linkStyle 9 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
+                            linkStyle 10 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
+                            linkStyle 11 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
+                        
+                            %% Ensure D is correctly placed in the flow
+                            D -- "Egress Route" --> J  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="security-features">
+                    <h3>Project Security Features</h3>
+                    <div class="security-grid">
+                        <div class="security-item">
+                            <h4>Network Segmentation</h4>
+                            <ul>
+                                <li>UDM Pro VLAN isolation</li>
+                                <li>pfSense DMZ on dedicated NIC</li>
+                                <li>MACVLAN for Docker networking</li>
+                                <li>IP routing for traffic control</li>
+                                <li>Restricted MGMT Network Access</li>
+                            </ul>
+                        </div>
+                        <div class="security-item">
+                            <h4>Traffic Management</h4>
+                            <ul>
+                                <li>Cloudflare tunnel encryption</li>
+                                <li>NPM SSL certificate handling</li>
+                                <li>www redirect enforcement</li>
+                                <li>Docker network isolation</li>
+                                <li>Cloudflare DoS protection</li>
+                            </ul>
+                        </div>
+                        <div class="security-item">
+                            <h4>Application Security</h4>
+                            <ul>
+                                <li>Secure coding practices</li>
+                                <li>Security headers</li>
+                                <li>Restrictive CSP policies for JS imports with nonce tokens for inline scripts</li>
+                                <li>Reduced attack surface by using non-root user for container services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Brandan Grossi's Security Portfolio. Built with security in mind.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/BrandanGG">GitHub</a>
+                    <a href="https://linkedin.com/in/Brandan-Grossi">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script nonce="{{ nonce }}" type="module" src="{{ url_for('static', filename='js/mermaid-init.js') }}"></script>
+</body>
+</html>
