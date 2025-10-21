@@ -27,9 +27,5 @@ def index():
     g.nonce = nonce
     return render_template('index.html', nonce=nonce)
 
-@app.route('/test')
-def test():
-    return render_template('test.html')
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=False)
