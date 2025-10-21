@@ -612,10 +612,10 @@
                             %% Theme-aligned styles (match site dark theme)
                             classDef Cloud fill:#1a1a1a,stroke:#00d4ff,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
                             classDef Host fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
-                            classDef App fill:#1a1a1a,stroke:#ff6b35,color:#ffffff,stroke-width:2px,rx:50%;
+                            classDef App fill:#1a1a1a,stroke:#ff6b35,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
                             classDef Proxy fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
-                            classDef Firewall fill:#1a1a1a,stroke:#ff4757,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
-                            classDef Egress fill:#1a1a1a,stroke:#444444,color:#b0b0b0,stroke-width:2px,rx:8px,ry:8px;
+                            classDef Firewall fill:#1a1a1a,stroke:#ff4757,color:#ffffff,stroke-width:2px,rx:50%;
+                            classDef Egress fill:#1a1a1a,stroke:#ffaa00,color:#ffffff,stroke-width:2px,rx:8px,ry:8px;
                             classDef User fill:#1a1a1a,stroke:#00ff88,color:#ffffff,stroke-width:2px,rx:50%;
                         
                             %% -------------------- INBOUND APPLICATION FLOW --------------------
@@ -637,7 +637,7 @@
                             G -- "Proxy" --> H
                         
                             %% -------------------- OUTBOUND EGRESS / INTERNET FLOW --------------------
-                            subgraph "Egress Path"
+                            subgraph "Internal"
                                 direction LR
                                 J["PFSense Firewall"]:::Firewall
                                 K["Isolated NIC"]:::Egress
@@ -654,12 +654,11 @@
                             H -- "External Resource Fetch" --> D
                         
                             %% Link styling for egress routes (dashed, blue)
+                            linkStyle 7 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
+                            linkStyle 8 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
                             linkStyle 9 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
                             linkStyle 10 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
                             linkStyle 11 stroke-dasharray: 5 5, stroke: #00d4ff, stroke-width: 2px;
-                        
-                            %% Ensure D is correctly placed in the flow
-                            D -- "Egress Route" --> J  
                         </div>
                     </div>
                 </div>
