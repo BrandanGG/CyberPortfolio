@@ -28,7 +28,6 @@ WORKDIR $APP_HOME
 
 # Copy the start script, clean line endings, and set execution permissions
 # *** FIX FOR exec format error ***
-# Use 'sed' to globally replace Windows line endings (\r) with nothing.
 COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
 COPY --from=builder /usr/local/bin/gunicorn /usr/local/bin/
 COPY start.sh /usr/local/bin/start.sh
