@@ -2,9 +2,7 @@ services:
   web:
     build:
       context: app
-      dockerfile: Dockerfile # Assuming Dockerfile is in the root directory and 'app' is the context folder
-      # If your Dockerfile is in the 'app' directory, use context: ./app
-    # target: builder # (You may not need 'target: builder' if you are not using multi-stage builds)
+      dockerfile: Dockerfile
     stop_signal: SIGINT
     ports:
       - '8000:8000'
@@ -12,7 +10,8 @@ services:
       - ./app:/app
     networks:
       dmz:
-        ipv4_address: 10.0.25.200
+        ipv4_address: {ip_addr}
+        #Replace with real internal ip address ^
 networks:
   dmz:
     external: true
