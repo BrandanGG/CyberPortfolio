@@ -1,5 +1,5 @@
 # Use a Python image as the base
-FROM python:3.11-slim as base
+FROM python:3.15-rc-alpine3.22 as base
 
 # Stage 1: Builder for Dependencies
 FROM base as builder
